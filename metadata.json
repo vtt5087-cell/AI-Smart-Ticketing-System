@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Clean Core Rebuild",
+  "description": "A responsive, redesigned application focusing on core Week 3 functionality while eliminating prior platform token and layout constraints.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

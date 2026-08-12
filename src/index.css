@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--app-font-family), system-ui, sans-serif;
+}
+
+:root {
+  --app-font-family: 'Lexend', sans-serif;
+}
+
+html, body, button, input, select, textarea, p, h1, h2, h3, h4, h5, h6, span, a, label, li, table, td, th {
+  font-family: var(--app-font-family) !important;
+}
+
+.font-lexend { font-family: 'Lexend', sans-serif !important; }
+.font-atkinson { font-family: 'Atkinson Hyperlegible', sans-serif !important; }
+.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }
+.font-inter { font-family: 'Inter', sans-serif !important; }
+.font-opensans { font-family: 'Open Sans', sans-serif !important; }
+.font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important; }
+
+/* Custom scrollbars for clean UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
